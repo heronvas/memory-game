@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card game</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="board">
+<span>
+	<h1 style="padding-left: 40px;">Time:<span id="Time">00:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:<span id="score">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><button id="finish">Quit</button></span></h1>
+</span>
+</div>
+<div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2></h2>
+      </div>
+      <div class="modal-body">
+        
+        <p id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi, sunt consectetur ipsa velit
+          repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor deleniti quibusdam nemo
+          commodi ab.</p>
+      </div>
+      <div class="modal-footer">
+        
+        <button id="yes" class="btn btn-primary">Yes</button>
+        <button id="no" class="btn btn-primary">No</button>
+      </div>
+    </div>
+  </div>
+
+<div id="container">
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+<div class="card_outer">
+	<div class="card_inner">
+		<div class="front"></div>
+		<div class="back"><img src=""></div>
+		
+	</div>
+	
+</div>
+
+	
+</div>
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAwv9W0rhdWPl5RxRJLSvUTa2Mczt31zf8",
+    authDomain: "register-5d2dc.firebaseapp.com",
+    databaseURL: "https://register-5d2dc.firebaseio.com",
+    projectId: "register-5d2dc",
+    storageBucket: "register-5d2dc.appspot.com",
+    messagingSenderId: "96588430685",
+    appId: "1:96588430685:web:518cbff58205dc490e3cb4",
+    measurementId: "G-FQTTHNJ50R"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+</script>
+<script src="game.js"></script>
+</html>

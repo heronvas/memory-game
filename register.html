@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+<style>
+	/*add full-width input fields*/
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 2px solid #ccc;
+		box-sizing: border-box;
+	}
+	/* set a style for all buttons*/
+	button {
+		background-color: green;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		cursor: pointer;
+		width: 100%;
+	}
+	/*set styles for the cancel button*/
+	.cancelbtn {
+		padding: 14px 20px;
+		background-color: #FF2E00;
+	}
+	/*float cancel and signup buttons and add an equal width*/
+	.cancelbtn,
+	.signupbtn {
+		text-align: center;
+		width: 100%;
+	}
+	/*add padding to container elements*/
+	.container {
+		padding: 16px;
+	}
+	/*define the modal’s background*/
+
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		padding-top: 60px;
+	}
+	/*define the modal-content background*/
+
+	.modal-content {
+		background-color: #fefefe;
+		margin: 5% auto 15% auto;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	/*define the close button*/
+
+	.close {
+		position: absolute;
+		right: 35px;
+		top: 15px;
+		color: #000;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	/*define the close hover and focus effects*/
+
+	.close:hover,
+	.close:focus {
+		color: red;
+		cursor: pointer;
+	}
+
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	@media screen and (max-width: 300px) {
+		.cancelbtn,
+		.signupbtn {
+			width: 100%;
+		}
+	}
+	.heading{
+	    text-align:center;
+	}
+</style>
+</head>
+<body>
+
+	<!--h2>Modal Signup Form</h2-->
+	<!--Step 1:Adding HTML-->
+    <div class="heading">
+    <h1>Register Yourself</h1>
+    </div>
+		<form class="modal-content" id="RegForm1" name="RegForm" onsubmit="return valid_reg();" action="" method="post" >
+			<div class="container">
+				<label><b>Username </b></label>
+				<input type="text" placeholder="Enter username" name="username" required>
+
+				<label><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<label><b>Confirm Password</b></label>
+				<input type="password" placeholder="Confirm Password" name="psw_repeat" required>
+				<input type="checkbox"> Remember me
+				<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+				<div class="clearfix">
+					<button  class="signupbtn" value="submit" type="submit" onclick="register_user()">Sign Up</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+<script src="reg.js"></script>
+
+</body>
+
+</html>

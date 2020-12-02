@@ -1,0 +1,195 @@
+
+<html>
+<head>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+</head>
+<style>
+
+	/*assign full width inputs*/
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 6px 10px;
+		margin: 4px 0;
+		display: block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	/*set a style for the buttons*/
+	button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 7px 10px;
+		margin: 4px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+
+	/* set a hover effect for the button*/
+	button:hover {
+		opacity: 0.8;
+	}
+
+	/*set extra style for the cancel button*/
+	.cancelbtn {
+		width: auto;
+		padding: 5px 9px;
+		background-color: #f44336;
+	}
+
+	/*centre the display image inside the container*/
+	.imgcontainer {
+		text-align: center;
+		margin: 24px 0 12px 0;
+		position: relative;
+	}
+
+	/*set image properties*/
+	img.avatar {
+		width: 20%;
+		border-radius: 50%;
+	}
+
+	/*set padding to the container*/
+	.container {
+		padding: 16px;
+
+	}
+
+	/*set the forgot password text*/
+	span.psw {
+		float: right;
+		padding-top: 16px;
+	}
+
+	/*set the Modal background*/
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		padding-top: 20px;
+	}
+
+	/*style the model content box*/
+	.modal-content {
+		background-color: #fefefe;
+		margin: 5% auto 15% auto;
+		border: 1px solid #888;
+		width: 40%;
+	}
+
+	/*style the close button*/
+	.close {
+		position: absolute;
+		right: 12px;
+		top: 0;
+		color: #000;
+		font-size: 35px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: red;
+		cursor: pointer;
+	}
+
+	/* add zoom animation*/
+	.animate {
+		-webkit-animation: animatezoom 0.6s;
+		animation: animatezoom 0.6s
+	}
+
+	@-webkit-keyframes animatezoom {
+		from {
+			-webkit-transform: scale(0)
+		}
+		to {
+			-webkit-transform: scale(1)
+		}
+	}
+
+	@keyframes animatezoom {
+		from {
+			transform: scale(0)
+		}
+		to {
+			transform: scale(1)
+		}
+	}
+
+	@media screen and (max-width: 300px) {
+		span.psw {
+			display: block;
+			float: none;
+		}
+		.cancelbtn {
+			width: 100%;
+		}
+	}
+</style>
+
+<body>
+
+	<h2>Modal Login Form</h2>
+	<!--Step 1 : Adding HTML-->
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+	<div  class="modal" id="id01">
+
+		<form class="modal-content animate" action="register.html"  id = "Log" name="Logpage" method="post" onsubmit="return valid_log();">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+				<img src=""   class="avatar">
+			</div>
+
+			<div class="container">
+				<label><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<button value="submit" type="submit" onclick="login_user()">Login</button>
+				<input type="checkbox" checked="checked"> Remember me
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+ 				 <a href="register.html">< Previous</a>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		</form>
+	</div>
+
+	<script src="reg.js">
+
+
+	</script>
+</body>
+
+</html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

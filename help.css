@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(95, 91, 100);
+    position: relative;
+
+
+}
+
+.animation{
+
+
+    position: absolute;
+    top: 8px;
+    right: 16px;
+
+
+}
+
+.heading{
+    text-align: center;
+    padding-right: 2cm;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 0.6cm;
+
+}
+
+.rules{
+    padding-left: 0.5cm;
+    font-family: 'Poor Story', cursive;
+    color: rgb(35, 34, 37);
+
+}
+
+#question_mark{
+
+    animation: question 1s ease infinite;
+
+}
+
+@keyframes question{
+    from{
+       transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(40deg);
+    }
+}
+
+#womens_hand{
+
+    animation: women 1s ease infinite;
+    transform-origin: center;
+}
+
+@keyframes women{
+    from{
+       transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(40deg);
+    }
+}
+
+#mans_hand{
+
+    animation: man 1s ease infinite;
+    transform-origin: center;
+}
+
+@keyframes man{
+    from{
+       transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(28deg);
+    }
+}
+
+

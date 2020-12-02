@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.heading{
+    text-align: center;
+}
+body{
+    text-align: right;
+    position: relative;
+
+}
+.animations2{
+    position: absolute;
+    top: 70px;
+    left: 95px;
+}
+
+#final_man{
+
+    animation: man 1s ease infinite;
+
+}
+
+@keyframes man{
+    from{
+       transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(40deg);
+    }
+}
+
+#women3{
+
+    animation: women 1s ease infinite;
+
+}
+
+@keyframes women{
+    from{
+       transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(15deg);
+    }
+}
+
+#trophy{
+
+    animation: trophy1 1s ease infinite;
+
+}
+
+@keyframes trophy1{
+    from{
+       transform: rotateY(-20deg);
+    }
+
+    to{
+        transform: rotateY(20deg);
+    }
+}
+
+
+.LeaderBoard{
+    max-width: 440px;
+    border: 1px solid black;
+    position: absolute;
+    top: 100px;
+    left: 600px;
+}
+
+
+header{
+
+    background-color: rgb(212, 125, 11);
+    font-family: 'Carter One', cursive;
+    text-align: center;
+
+}
+
+table{
+    background-color: #16181e;
+    width: 100%;
+}
+thead{
+    color: white;
+    font-family: 'Carter One', cursive;
+    font-family: 'Prata', serif;
+    font-family: 'Rock Salt', cursive;
+
+}
+
+tbody{
+    color: white;
+    font-family: 'Carter One', cursive;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Prata', serif;
+    font-family: 'Rock Salt', cursive;
+}
+
+tbody tr:nth-child(2n){
+    background-color: #1f232c;
+}
+
+.username{
+    text-align: center;
+}
+
+.rank{
+    text-align: center;
+}
+
+.points{
+    text-align: center;
+}
+
+td{
+    padding: 0.8rem 1rem;
+
+}
+th{
+    padding: 0.8rem 1rem;
+}
